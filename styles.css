@@ -18,7 +18,7 @@
 }
 
 .right {
-    border-left: #333333 20px solid;
+    border-left: #333333 30px solid;
 }
 
 .bottom {
@@ -50,7 +50,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    right: -28px;
+    right: -33px;
     z-index: 1;
     border-right: .3rem dashed #f5e53b;
 }
