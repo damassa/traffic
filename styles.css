@@ -1,0 +1,141 @@
+/* Rua */
+.quarteirao {
+    max-width: 400px;
+    max-height: 29.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px auto;
+}
+
+.quadra {
+    background-color: #CCCCCC;
+    height: 150px;
+}
+
+.top {
+    border-bottom: #333333 30px solid;
+}
+
+.right {
+    border-left: #333333 20px solid;
+}
+
+.bottom {
+    border-top: #333333 30px solid;
+    position: relative;
+}
+
+.left {
+    border-right: #333333 30px solid;
+    position: relative;
+}
+
+/* Faixas */
+.bottom::before {
+    content: " ";
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    right: 0;
+    bottom: 15rem;
+    border-bottom: 0.3rem dashed #f5e53b;
+}
+
+.left::after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: -28px;
+    z-index: 1;
+    border-right: .3rem dashed #f5e53b;
+}
+
+/* Semáforo */
+.semaforo {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: relative;
+    border-radius: 100%;
+}
+
+.semaforo::after {
+    content: " ";
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: -2px;
+    left: 10px;
+    border-radius: 100%;
+}
+
+.aberto {
+    background-color: red !important;
+}
+
+.fechado {
+    background-color: green !important;
+}
+
+.top>.semaforo{
+    background-color : white;
+    position: absolute;
+    top: 11.6rem;
+    right: -30px;
+    background-color: white;
+    border: 2px solid red;
+}
+
+.top>.semaforo::after{
+    content: " ";
+    top: -3px;
+    left: -13px;
+    background-color: white;
+    border: 2px solid green;
+}
+
+.bottom>.semaforo{
+    background-color: white;
+    position: absolute;
+    top: -16px;
+    right: 0;
+    border: 2px solid green;
+    background-color:white;
+}
+
+.bottom>.semaforo::after{
+    content: " ";    
+    background-color: white;
+    top: -16px;
+    left: -2px;
+    border: 2px solid red;
+}
+
+/* Carros */
+.carro {
+    width: 50px;
+
+    color: white;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.carro__vertical {
+    position: relative;
+    transform: rotate(90deg);
+    background-color: purple;
+    bottom: 15.6rem;
+    right: 13px;
+}
+
+.carro__horizontal {
+    position: relative;
+    background-color: rebeccapurple;
+    bottom: 12.6rem;
+    left: 230px;
+}
